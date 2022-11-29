@@ -13,6 +13,7 @@ namespace galaxy.Entity.Spaceships
         public BetaSpaceShip(Space space) : base(space)
         {
             vision = 50;
+            status = SpaceShipStatus.inSearch
 
             for (int i = 0; i < 3; i++)
             {

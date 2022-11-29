@@ -12,6 +12,7 @@ namespace galaxy.Entity.Spaceships
 
         public AlphaSpaceShip(Space space) : base(space) {
             vision = 20;
+            status = SpaceShipStatus.inSearch
 
             int maxCapacity = space.random.Next(700, 2000);
             int currentCapacity = Convert.ToInt32(maxCapacity * 0.6);

@@ -8,4 +8,14 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Entity\Celestial body\Planet\" />
+    <Compile Remove="Entity\Celestial body\Star\" />
+    <Compile Remove="Entity\Spaceships\Specific\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Entity\Celestial body\Planet\" />
+    <Folder Include="Entity\Celestial body\Star\" />
+    <Folder Include="Entity\Spaceships\Specific\" />
+  </ItemGroup>
 </Project>

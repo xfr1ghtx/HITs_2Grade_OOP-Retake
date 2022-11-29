@@ -13,10 +13,26 @@ namespace galaxy.Entity.Spaceships
         protected int vision;
         protected List<SpaceEngine> engines;
         protected IMovement movement;
+        protected SpaceShipStatus status;
         
         public SpaceShip(Space space) : base(space) 
         {
             engines= new List<SpaceEngine>();
+        }
+
+        public virtual void play(Random random)
+        {
+
+
+            if status == SpaceShipStatus.Die {
+                return
+            } else if status == SpaceShipStatus.inSearch {
+                movement.GetNextCoordinate(coordinate, vision, random);
+            } else if status == SpaceShipStatus.justFloatin {
+                movement.GetNextCoordinate(coordinate, vision, random)
+            }
+
+
         }
     }
 }

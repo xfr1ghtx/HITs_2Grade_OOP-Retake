@@ -12,6 +12,7 @@ namespace galaxy.Entity.Spaceships
         public DeltaSpaceShip(Space space) : base(space) 
         {
             vision = 30;
+            status = SpaceShipStatus.inSearch
 
             for (int i = 0; i < 2; i++)
             {
