@@ -1,0 +1,7 @@
+C:\Users\potap\Desktop\galaxy\obj\Debug\net6.0-windows\galaxy.csproj.AssemblyReference.cache
+C:\Users\potap\Desktop\galaxy\obj\Debug\net6.0-windows\galaxy.Form1.resources
+C:\Users\potap\Desktop\galaxy\obj\Debug\net6.0-windows\galaxy.csproj.GenerateResource.cache
+C:\Users\potap\Desktop\galaxy\obj\Debug\net6.0-windows\galaxy.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\potap\Desktop\galaxy\obj\Debug\net6.0-windows\galaxy.AssemblyInfoInputs.cache
+C:\Users\potap\Desktop\galaxy\obj\Debug\net6.0-windows\galaxy.AssemblyInfo.cs
+C:\Users\potap\Desktop\galaxy\obj\Debug\net6.0-windows\galaxy.csproj.CoreCompileInputs.cache
