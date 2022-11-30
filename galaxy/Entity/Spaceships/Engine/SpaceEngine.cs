@@ -10,15 +10,17 @@ namespace galaxy.Entity.Spaceships.Engine
     {
         protected int maxCapacity;
         protected int currentCapacity;
+        protected int warningCapacity;
 
-        const int valueOfMovement = 10;
+        protected int valueOfMovement;
 
         protected SpaceEngine(int maxCapacity, int currentCapacity) {
             this.maxCapacity = maxCapacity;
+            this.warningCapacity = maxCapacity / 2;
             this.currentCapacity = currentCapacity;
         }
 
-        protected bool makeMove()
+        public bool makeMove()
         {
             if (currentCapacity - valueOfMovement < 0)
             {
@@ -31,7 +33,7 @@ namespace galaxy.Entity.Spaceships.Engine
             }
         }
 
-        protected bool makeRefueling(int fuelQuantity)
+        public bool makeRefueling(int fuelQuantity)
         {
             if (currentCapacity + fuelQuantity > maxCapacity)
             {
@@ -44,5 +46,8 @@ namespace galaxy.Entity.Spaceships.Engine
                 return true;
             }
         }
+
+        public int getCurrentCapacity() { return currentCapacity; }
+        public int getWarningCapacity() { return warningCapacity; }
     }
 }

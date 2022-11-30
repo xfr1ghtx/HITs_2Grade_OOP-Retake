@@ -16,5 +16,8 @@ namespace galaxy.Entity
         {
             this._space = space;    
         }
+
+        protected virtual void Die() { }
+
     }
 }

@@ -1,4 +1,5 @@
 ﻿using galaxy.Entity.Spaceships.Engine;
+using galaxy.Interface;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +13,7 @@ namespace galaxy.Entity.Spaceships
         public SigmaSpaceShip(Space space) : base(space) 
         {
             vision = 40;
-            status = SpaceShipStatus.inSearch
+            status = SpaceShipStatus.Extraction;
 
             for (int i = 0; i < 3; i++)
             {
@@ -33,8 +34,7 @@ namespace galaxy.Entity.Spaceships
                 }
             }
 
-            movement = ;
-         
+            movement = space.random.Next() % 2 == 0 ? new MovementWithDiagonals() : new MovementWithoutDiagonals();
         }
     }
 }

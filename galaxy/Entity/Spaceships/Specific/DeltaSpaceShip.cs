@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using galaxy.Entity.Spaceships.Engine;
+using galaxy.Interface;
 
 namespace galaxy.Entity.Spaceships
 {
@@ -12,7 +13,7 @@ namespace galaxy.Entity.Spaceships
         public DeltaSpaceShip(Space space) : base(space) 
         {
             vision = 30;
-            status = SpaceShipStatus.inSearch
+            status = SpaceShipStatus.Extraction;
 
             for (int i = 0; i < 2; i++)
             {
@@ -20,7 +21,7 @@ namespace galaxy.Entity.Spaceships
 
             }
 
-            movement = ;
+            movement = space.random.Next() % 2 == 0 ? new MovementWithDiagonals() : new MovementWithoutDiagonals();
         }
     }
 }

@@ -25,20 +25,16 @@ namespace galaxy
         public void Play()
         {
             var planets = _space.GetPlanets();
+            var oilFields = _space.GetOilFields();
             var stars = _space.GetStars();
             var stations = _space.GetSpaceStations();
             var ships = _space.GetSpaceShips();
 
-            _drawer.Draw(planets, stars, stations, ships);
+            _drawer.Draw(planets, oilFields, stars, stations, ships);
 
             foreach (var ship in ships)
             {
-                ship.Play();
-            }
-
-            foreach (var station in stations)
-            {
-                station.Play();
+                ship.Play(_random);
             }
         }
 

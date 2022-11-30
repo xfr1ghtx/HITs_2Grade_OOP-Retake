@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/Users/stepanpotapov/Develop/OOP/galaxy/galaxy.csproj": {}
+    "C:\\Users\\potap\\Desktop\\OOP\\galaxy\\galaxy.csproj": {}
   },
   "projects": {
-    "/Users/stepanpotapov/Develop/OOP/galaxy/galaxy.csproj": {
+    "C:\\Users\\potap\\Desktop\\OOP\\galaxy\\galaxy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/stepanpotapov/Develop/OOP/galaxy/galaxy.csproj",
+        "projectUniqueName": "C:\\Users\\potap\\Desktop\\OOP\\galaxy\\galaxy.csproj",
         "projectName": "galaxy",
-        "projectPath": "/Users/stepanpotapov/Develop/OOP/galaxy/galaxy.csproj",
-        "packagesPath": "/Users/stepanpotapov/.nuget/packages/",
-        "outputPath": "/Users/stepanpotapov/Develop/OOP/galaxy/obj/",
+        "projectPath": "C:\\Users\\potap\\Desktop\\OOP\\galaxy\\galaxy.csproj",
+        "packagesPath": "C:\\Users\\potap\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\potap\\Desktop\\OOP\\galaxy\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/stepanpotapov/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\potap\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0-windows"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -56,7 +58,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "/Users/stepanpotapov/.dotnet/sdk/6.0.402/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

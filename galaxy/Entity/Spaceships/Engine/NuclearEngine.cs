@@ -10,7 +10,7 @@ namespace galaxy.Entity.Spaceships.Engine
     {
         public NuclearEngine(int maxCapacity, int currentCapacity) : base(maxCapacity, currentCapacity)
         {
-
+            valueOfMovement = 5;
         }
     }
 }

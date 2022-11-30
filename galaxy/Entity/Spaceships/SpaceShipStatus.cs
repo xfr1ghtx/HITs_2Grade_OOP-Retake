@@ -4,8 +4,9 @@ namespace galaxy.Entity.Spaceships
 	public enum SpaceShipStatus
 	{
 		Die,
-		inSearch,
-		justFloatin
+		Fuel,
+		Extraction,
+		Chill
 	}
 }
 

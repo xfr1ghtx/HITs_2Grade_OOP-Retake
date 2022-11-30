@@ -1,4 +1,5 @@
 ﻿using galaxy.Entity.Spaceships.Engine;
+using galaxy.Interface;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,13 +13,13 @@ namespace galaxy.Entity.Spaceships
 
         public AlphaSpaceShip(Space space) : base(space) {
             vision = 20;
-            status = SpaceShipStatus.inSearch
+            status = SpaceShipStatus.Extraction;
 
             int maxCapacity = space.random.Next(700, 2000);
             int currentCapacity = Convert.ToInt32(maxCapacity * 0.6);
 
             engines.Add(new OilEngine(maxCapacity, currentCapacity));
-            movement = ;
+            movement = space.random.Next() % 2 == 0 ? new MovementWithDiagonals() : new MovementWithoutDiagonals();
         }
     }
 }

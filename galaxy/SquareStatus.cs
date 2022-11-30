@@ -12,6 +12,8 @@ namespace galaxy
         Star,
         Planet,
         Station,
-        Spaceship
+        Spaceship,
+        OilField,
+        StarEnergy
     }
 }
